@@ -1,1 +1,1 @@
-# Java
+# Java JetBrains Academy course
