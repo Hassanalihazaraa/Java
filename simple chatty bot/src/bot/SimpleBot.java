@@ -4,15 +4,16 @@ import java.util.*;
 
 public class SimpleBot {
     public static void main(String[] args) {
-        printLetters();
-        printMagicLetters();
-        printTicTacToe();
-        printBotDetails();
-        printNumbers();
-        printDeclaration();
-        whatsMyName();
-        comments();
-        systemInput();
+        //printLetters();
+        //printMagicLetters();
+        //printTicTacToe();
+        //printBotDetails();
+        //printNumbers();
+        //printDeclaration();
+        //whatsMyName();
+        //comments();
+        //systemInput();
+        printSameOrder();
     }
 
     //printing Letters
@@ -122,4 +123,19 @@ public class SimpleBot {
         System.out.println(word4);
         System.out.println(word5);
     }
+
+    //Printing strings in the same order
+    public static void printSameOrder() {
+        Scanner scanner = new Scanner(System.in);
+        String word1 = scanner.next();
+        String word2 = scanner.next();
+        String word3 = scanner.next();
+        String word4 = scanner.next();
+
+        System.out.println(word1 + "\n" + word2 + "\n" + word3 + "\n" + word4);
+        //System.out.println(word2);
+        //System.out.println(word3);
+        //System.out.println(word4);
+    }
+
 }
