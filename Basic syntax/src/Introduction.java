@@ -1,6 +1,7 @@
 public class Introduction {
     public static void main(String[] args) {
         printLetters();
+        printMagicLetters();
     }
 
     //printing Letters
@@ -8,5 +9,16 @@ public class Introduction {
         System.out.println("first");
         System.out.println("second");
         System.out.println("third");
+    }
+
+    //printing magin letter
+    public static void printMagicLetters() {
+        System.out.println("********");
+        System.out.println("      **");
+        System.out.println("      **");
+        System.out.println("      **");
+        System.out.println("**    **");
+        System.out.println("**    **");
+        System.out.println(" *******");
     }
 }
