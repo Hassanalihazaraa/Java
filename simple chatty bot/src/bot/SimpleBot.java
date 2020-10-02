@@ -63,8 +63,9 @@ public class SimpleBot {
 
     //Fill the declaration
     public static void printDeclaration() {
-        int variable = 123456;  // Change this line
-
+        int variable = 123_456;
         System.out.println(variable);
     }
+
+    //
 }
