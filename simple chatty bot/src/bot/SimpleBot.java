@@ -97,5 +97,12 @@ public class SimpleBot {
         //System.out.println(980233);
         System.out.println(893_457);
         //System.out.println(789722);
+
+        System.out.print("three! ");
+        System.out.print("two! ");
+        System.out.println("one!");
+        //System.out.println("go!");
+
+        System.out.println("go!");
     }
 }
