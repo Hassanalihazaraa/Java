@@ -1,5 +1,7 @@
 package bot;
 
+import java.util.*;
+
 public class SimpleBot {
     public static void main(String[] args) {
         printLetters();
@@ -8,6 +10,8 @@ public class SimpleBot {
         printBotDetails();
         printNumbers();
         printDeclaration();
+        whatsMyName();
+        comments();
     }
 
     //printing Letters
@@ -67,5 +71,26 @@ public class SimpleBot {
         System.out.println(variable);
     }
 
-    //
+    //What's my name?
+    public static void whatsMyName() {
+        System.out.println("Hello! My name is Aid");
+        System.out.println("I was created in 2020");
+        System.out.println("Please, remind me your name.");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+        System.out.println("What a great name you have, " + input);
+    }
+
+    //comments
+    public static void comments(){
+         /*
+        System.out.println(1);
+        System.out.println(2);
+        System.out.println(3);
+        System.out.println(4);*/
+        System.out.println(5);
+        System.out.println(6);
+        System.out.println(7);
+        //System.out.println(8);
+    }
 }
