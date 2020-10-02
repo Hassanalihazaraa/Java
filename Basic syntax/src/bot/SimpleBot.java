@@ -43,6 +43,7 @@ public class SimpleBot {
                 "I was created in " + birthDay + ".");
     }
 
+    //Assignments
     public static void printNumbers() {
         int one = 1;
         int two = 2;
@@ -50,4 +51,14 @@ public class SimpleBot {
         int four = 4;
         System.out.println(String.format("%d %d %d %d", one, two, three, four));
     }
+
+    //Invalid declaration of variables
+    public static void printDeclaredVariables() {
+        int a = 512_343;
+        int b = 3_431_231;
+
+        System.out.println(a + b);
+    }
+
+
 }
