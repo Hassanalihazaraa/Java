@@ -12,6 +12,7 @@ public class SimpleBot {
         printDeclaration();
         whatsMyName();
         comments();
+        systemInput();
     }
 
     //printing Letters
@@ -82,7 +83,7 @@ public class SimpleBot {
     }
 
     //comments
-    public static void comments(){
+    public static void comments() {
          /*
         System.out.println(1);
         System.out.println(2);
@@ -104,5 +105,21 @@ public class SimpleBot {
         //System.out.println("go!");
 
         System.out.println("go!");
+    }
+
+    //Printing each word in a new line
+    public static void systemInput() {
+        Scanner scanner = new Scanner(System.in);
+        String word1 = scanner.next();
+        String word2 = scanner.next();
+        String word3 = scanner.next();
+        String word4 = scanner.next();
+        String word5 = scanner.next();
+
+        System.out.println(word1);
+        System.out.println(word2);
+        System.out.println(word3);
+        System.out.println(word4);
+        System.out.println(word5);
     }
 }
