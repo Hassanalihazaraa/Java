@@ -7,6 +7,7 @@ public class SimpleBot {
         printTicTacToe();
         printBotDetails();
         printNumbers();
+        printDeclaration();
     }
 
     //printing Letters
@@ -60,5 +61,10 @@ public class SimpleBot {
         System.out.println(a + b);
     }
 
+    //Fill the declaration
+    public static void printDeclaration() {
+        int variable = 123456;  // Change this line
 
+        System.out.println(variable);
+    }
 }
