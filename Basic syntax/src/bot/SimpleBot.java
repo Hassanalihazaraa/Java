@@ -6,6 +6,7 @@ public class SimpleBot {
         printMagicLetters();
         printTicTacToe();
         printBotDetails();
+        printNumbers();
     }
 
     //printing Letters
@@ -40,5 +41,13 @@ public class SimpleBot {
         int birthDay = 2020;
         System.out.println("Hello! My name is " + name + "\n" +
                 "I was created in " + birthDay + ".");
+    }
+
+    public static void printNumbers() {
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        int four = 4;
+        System.out.println(String.format("%d %d %d %d", one, two, three, four));
     }
 }
