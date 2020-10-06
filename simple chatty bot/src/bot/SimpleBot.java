@@ -14,8 +14,10 @@ public class SimpleBot {
         //comments();
         //systemInput();
         //printSameOrder();
-        printFromLastName();
+        //printFromLastName();
+        hiringAChef();
     }
+
 
     //printing Letters
     public static void printLetters() {
@@ -156,4 +158,17 @@ public class SimpleBot {
         System.out.println(input2);
         System.out.println(input1);
     }
+
+    public static void hiringAChef() {
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.next();
+        scanner.next();
+        scanner.next();
+        scanner.next();
+        String cuisinePreference = scanner.next();
+
+        System.out.print("The form for " + name + " is completed.");
+        System.out.print("We will contact you if we need a chef that cooks " + cuisinePreference + " dishes.");
+    }
+
 }
