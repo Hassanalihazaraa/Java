@@ -6,7 +6,8 @@ public class HowOldAreYou {
     public static void main(String[] args) {
         //arithmetic();
         //DifferenceOfTimes();
-        sumOfDigits();
+        //sumOfDigits();
+        desks();
     }
 
     public static void arithmetic() {
@@ -31,5 +32,14 @@ public class HowOldAreYou {
         int third = number % 10;
 
         System.out.println(first + second + third);
+    }
+
+    public static void desks() {
+        Scanner scanner = new Scanner(System.in);
+        int classOne = (int) Math.ceil((float) scanner.nextInt() / 2);
+        int classTwo = (int) Math.ceil((float) scanner.nextInt() / 2);
+        int classThree = (int) Math.ceil((float) scanner.nextInt() / 2);
+
+        System.out.println(classOne + classTwo + classThree);
     }
 }
