@@ -1,5 +1,7 @@
 package bot;
 
+import jdk.jshell.execution.JdiExecutionControl;
+
 import java.util.Scanner;
 
 public class HowOldAreYou {
@@ -7,7 +9,8 @@ public class HowOldAreYou {
         //arithmetic();
         //DifferenceOfTimes();
         //sumOfDigits();
-        desks();
+        //desks();
+        decrement();
     }
 
     public static void arithmetic() {
@@ -41,5 +44,16 @@ public class HowOldAreYou {
         int classThree = (int) Math.ceil((float) scanner.nextInt() / 2);
 
         System.out.println(classOne + classTwo + classThree);
+    }
+
+
+    public static void decrement() {
+        Scanner scanner = new Scanner(System.in);
+        int one = scanner.nextInt();
+        int two = scanner.nextInt();
+        int three = scanner.nextInt();
+        int four = scanner.nextInt();
+
+        System.out.print(--one + " " + --two + " " + --three + " " + --four);
     }
 }
