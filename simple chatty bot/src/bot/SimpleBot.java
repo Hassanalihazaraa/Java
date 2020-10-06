@@ -13,7 +13,8 @@ public class SimpleBot {
         //whatsMyName();
         //comments();
         //systemInput();
-        printSameOrder();
+        //printSameOrder();
+        printFromLastName();
     }
 
     //printing Letters
@@ -133,9 +134,26 @@ public class SimpleBot {
         String word4 = scanner.next();
 
         System.out.println(word1 + "\n" + word2 + "\n" + word3 + "\n" + word4);
-        //System.out.println(word2);
-        //System.out.println(word3);
-        //System.out.println(word4);
     }
 
+    public static void printFromLastName() {
+        Scanner scanner = new Scanner(System.in);
+        String input1 = scanner.next();
+        String input2 = scanner.next();
+        String input3 = scanner.next();
+        String input4 = scanner.next();
+        String input5 = scanner.next();
+        String input6 = scanner.next();
+        String input7 = scanner.next();
+        String input8 = scanner.next();
+
+        System.out.println(input8);
+        System.out.println(input7);
+        System.out.println(input6);
+        System.out.println(input5);
+        System.out.println(input4);
+        System.out.println(input3);
+        System.out.println(input2);
+        System.out.println(input1);
+    }
 }
