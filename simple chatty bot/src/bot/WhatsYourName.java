@@ -2,19 +2,19 @@ package bot;
 
 import java.util.*;
 
-public class SimpleBot {
+public class WhatsYourName {
     public static void main(String[] args) {
-        //printLetters();
-        //printMagicLetters();
-        //printTicTacToe();
-        //printBotDetails();
-        //printNumbers();
-        //printDeclaration();
-        //whatsMyName();
-        //comments();
-        //systemInput();
-        //printSameOrder();
-        //printFromLastName();
+        printLetters();
+        printMagicLetters();
+        printTicTacToe();
+        printBotDetails();
+        printNumbers();
+        printDeclaration();
+        whatsMyName();
+        comments();
+        systemInput();
+        printSameOrder();
+        printFromLastName();
         hiringAChef();
     }
 
@@ -170,5 +170,4 @@ public class SimpleBot {
         System.out.print("The form for " + name + " is completed.");
         System.out.print("We will contact you if we need a chef that cooks " + cuisinePreference + " dishes.");
     }
-
 }
