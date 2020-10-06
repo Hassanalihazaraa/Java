@@ -10,7 +10,8 @@ public class HowOldAreYou {
         //DifferenceOfTimes();
         //sumOfDigits();
         //desks();
-        decrement();
+        //decrement();
+        extractSubstring();
     }
 
     public static void arithmetic() {
@@ -55,5 +56,14 @@ public class HowOldAreYou {
         int four = scanner.nextInt();
 
         System.out.print(--one + " " + --two + " " + --three + " " + --four);
+    }
+
+    public static void extractSubstring() {
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.next();
+        int number1 = scanner.nextInt();
+        int number2 = scanner.nextInt();
+
+        System.out.println(name.substring(number1, number2 + 1));
     }
 }
