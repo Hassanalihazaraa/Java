@@ -6,7 +6,8 @@ public class StageFour {
     public static void main(String[] args) {
         //checkSum();
         //notEqual();
-        sort();
+        //sort();
+        conditionalStatement();
     }
 
     public static void checkSum() {
@@ -42,4 +43,19 @@ public class StageFour {
             System.out.println(false);
         }
     }
+
+    public static void conditionalStatement() {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int h = scanner.nextInt();
+        if (h < a) {
+            System.out.println("Deficiency");
+        } else if (h > b) {
+            System.out.println("Excess");
+        } else {
+            System.out.println("Normal");
+        }
+    }
+
 }
