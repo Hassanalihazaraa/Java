@@ -2,7 +2,7 @@ package bot;
 
 import java.util.Scanner;
 
-public class WhatsMyName {
+public class StageTwo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

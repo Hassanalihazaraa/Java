@@ -2,7 +2,7 @@ package bot;
 
 import java.util.*;
 
-public class WhatsYourName {
+public class StageOne {
     public static void main(String[] args) {
         printLetters();
         printMagicLetters();

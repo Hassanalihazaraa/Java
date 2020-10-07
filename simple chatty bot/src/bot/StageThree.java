@@ -2,7 +2,7 @@ package bot;
 
 import java.util.Scanner;
 
-public class HowOldAreYou {
+public class StageThree {
     public static void main(String[] args) {
         //arithmetic();
         //DifferenceOfTimes();
@@ -11,7 +11,8 @@ public class HowOldAreYou {
         //decrement();
         //extractSubstring();
         //replaceSubstring();
-        stringContains();
+        //stringContains();
+
     }
 
     public static void arithmetic() {
