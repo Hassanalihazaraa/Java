@@ -7,7 +7,8 @@ public class StageFour {
         //checkSum();
         //notEqual();
         //sort();
-        conditionalStatement();
+        //conditionalStatement();
+        conditionalStatementTwo();
     }
 
     public static void checkSum() {
@@ -58,4 +59,9 @@ public class StageFour {
         }
     }
 
+    public static void conditionalStatementTwo() {
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        System.out.println((i > -15 && i <= 12) || (i > 14 && i < 17) || (i >= 19) ? "True" : "False");
+    }
 }
