@@ -5,7 +5,8 @@ import java.util.*;
 public class StageFour {
     public static void main(String[] args) {
         //checkSum();
-        notEqual();
+        //notEqual();
+        sort();
     }
 
     public static void checkSum() {
@@ -26,5 +27,19 @@ public class StageFour {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
         System.out.println(a != b && b != c && a != c);
+    }
+
+    public static void sort() {
+        Scanner scanner = new Scanner(System.in);
+        int h1 = scanner.nextInt();
+        int h2 = scanner.nextInt();
+        int h3 = scanner.nextInt();
+        if (h1 >= h2 && h2 >= h3) {
+            System.out.println(true);
+        } else if (h3 >= h2 && h2 >= h1) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
     }
 }
