@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class StageThree {
     public static void main(String[] args) {
-        //arithmetic();
-        //DifferenceOfTimes();
-        //sumOfDigits();
-        //desks();
-        //decrement();
-        //extractSubstring();
-        //replaceSubstring();
-        //stringContains();
+        arithmetic();
+        DifferenceOfTimes();
+        sumOfDigits();
+        desks();
+        decrement();
+        extractSubstring();
+        replaceSubstring();
+        stringContains();
         howOldAmI();
 
     }
