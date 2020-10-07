@@ -1,7 +1,5 @@
 package bot;
 
-import jdk.jshell.execution.JdiExecutionControl;
-
 import java.util.Scanner;
 
 public class HowOldAreYou {
@@ -11,7 +9,8 @@ public class HowOldAreYou {
         //sumOfDigits();
         //desks();
         //decrement();
-        extractSubstring();
+        //extractSubstring();
+        replaceSubstring();
     }
 
     public static void arithmetic() {
@@ -65,5 +64,12 @@ public class HowOldAreYou {
         int number2 = scanner.nextInt();
 
         System.out.println(name.substring(number1, number2 + 1));
+    }
+
+    public static void replaceSubstring() {
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.next();
+        String replacedString = string.replaceAll("a", "b");
+        System.out.println(replacedString);
     }
 }
