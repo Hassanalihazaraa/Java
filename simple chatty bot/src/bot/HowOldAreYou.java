@@ -10,7 +10,8 @@ public class HowOldAreYou {
         //desks();
         //decrement();
         //extractSubstring();
-        replaceSubstring();
+        //replaceSubstring();
+        stringContains();
     }
 
     public static void arithmetic() {
@@ -68,8 +69,13 @@ public class HowOldAreYou {
 
     public static void replaceSubstring() {
         Scanner scanner = new Scanner(System.in);
+        String string = scanner.next().replaceAll("a", "b");
+        System.out.println(string);
+    }
+
+    public static void stringContains() {
+        Scanner scanner = new Scanner(System.in);
         String string = scanner.next();
-        String replacedString = string.replaceAll("a", "b");
-        System.out.println(replacedString);
+        System.out.println(string.contains("J") || string.contains("j"));
     }
 }
