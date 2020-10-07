@@ -8,7 +8,8 @@ public class StageFour {
         //notEqual();
         //sort();
         //conditionalStatement();
-        conditionalStatementTwo();
+        //conditionalStatementTwo();
+        leapYear();
     }
 
     public static void checkSum() {
@@ -63,5 +64,12 @@ public class StageFour {
         Scanner scanner = new Scanner(System.in);
         int i = scanner.nextInt();
         System.out.println((i > -15 && i <= 12) || (i > 14 && i < 17) || (i >= 19) ? "True" : "False");
+    }
+
+
+    public static void leapYear() {
+        Scanner scanner = new Scanner(System.in);
+        int year = scanner.nextInt();
+        System.out.println((year % 4 == 0 && year % 100 != 0) || year % 400 == 0 ? "Leap" : "Regular");
     }
 }
