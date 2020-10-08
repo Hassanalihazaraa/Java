@@ -11,7 +11,8 @@ public class StageFour {
         //conditionalStatementTwo();
         //leapYear();
         //chocolate();
-        sumOfIntegers();
+        //sumOfIntegers();
+        sizeOfParts();
     }
 
     public static void checkSum() {
@@ -92,5 +93,25 @@ public class StageFour {
             sum += i;
         }
         System.out.println(sum);
+    }
+
+    public static void sizeOfParts() {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int fixed = 0;
+        int reject = 0;
+        int perfect = 0;
+
+        for (int i = 0; i < n; i++) {
+            int size = scanner.nextInt();
+            if (size == 1) {
+                fixed++;
+            } else if (size == -1) {
+                reject++;
+            } else {
+                perfect++;
+            }
+        }
+        System.out.println(perfect + " " + fixed + " " + reject);
     }
 }
