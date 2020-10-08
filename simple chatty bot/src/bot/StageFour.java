@@ -10,7 +10,8 @@ public class StageFour {
         //conditionalStatement();
         //conditionalStatementTwo();
         //leapYear();
-        chocolate();
+        //chocolate();
+        sumOfIntegers();
     }
 
     public static void checkSum() {
@@ -80,5 +81,16 @@ public class StageFour {
         int m = scanner.nextInt();
         int k = scanner.nextInt();
         System.out.println((k % n == 0 && k / n < m) || (k % m == 0 && k / m < n) ? "YES" : "NO");
+    }
+
+    public static void sumOfIntegers() {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int sum = 0;
+        for (int i = a; i <= b; i++) {
+            sum += i;
+        }
+        System.out.println(sum);
     }
 }
