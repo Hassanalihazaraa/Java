@@ -12,7 +12,8 @@ public class StageFour {
         //leapYear();
         //chocolate();
         //sumOfIntegers();
-        sizeOfParts();
+        //sizeOfParts();
+        divisibleByNumber();
     }
 
     public static void checkSum() {
@@ -113,5 +114,18 @@ public class StageFour {
             }
         }
         System.out.println(perfect + " " + fixed + " " + reject);
+    }
+
+    public static void divisibleByNumber() {
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+        int sum = 0;
+
+        for (int i = 0; i <= input; i++) {
+            if (input % 6 == 0) {
+                sum += input;
+            }
+        }
+        System.out.println(sum);
     }
 }
