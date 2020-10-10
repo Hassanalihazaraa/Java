@@ -121,10 +121,10 @@ public class StageFour {
         int input = scanner.nextInt();
         int sum = 0;
 
-        //still a small bug here to fix
-        for (int i = 0; i <= input; i++) {
-            if (input % 6 == 0) {
-                sum += input;
+        for (int i = 0; i < input; i++) {
+            int num = scanner.nextInt();
+            if (num % 6 == 0) {
+                sum += num;
             }
         }
         System.out.println(sum);
