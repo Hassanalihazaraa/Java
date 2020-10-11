@@ -13,7 +13,8 @@ public class StageFour {
         //chocolate();
         //sumOfIntegers();
         //sizeOfParts();
-        divisibleByNumber();
+        //divisibleByNumber();
+        divisibleByFour();
     }
 
     public static void checkSum() {
@@ -128,5 +129,20 @@ public class StageFour {
             }
         }
         System.out.println(sum);
+    }
+
+    public static void divisibleByFour() {
+        Scanner scanner = new Scanner(System.in);
+        int max = scanner.nextInt();
+        int result = 0;
+
+        for (int i = 0; i < max; i++) {
+            int n = scanner.nextInt();
+
+            if (n % 4 == 0 && n > result) {
+                result = n;
+            }
+        }
+        System.out.println(result);
     }
 }
