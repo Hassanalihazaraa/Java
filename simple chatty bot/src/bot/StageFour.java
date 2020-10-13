@@ -16,7 +16,8 @@ public class StageFour {
         //divisibleByNumber();
         //divisibleByFour();
         //countOfNumbers();
-        cubicEquation();
+        //cubicEquation();
+        arithmeticAverage();
     }
 
     public static void checkSum() {
@@ -176,5 +177,26 @@ public class StageFour {
                 System.out.println(i);
             }
         }
+    }
+
+    public static void arithmeticAverage() {
+        Scanner scanner = new Scanner(System.in);
+        double a = scanner.nextInt();
+        double b = scanner.nextInt();
+
+        double maxA = Math.min(a, b);
+        double maxB = Math.max(a, b);
+
+        double result = 0;
+        double counter = 0;
+        for (double i = maxA; i <= maxB; i++) {
+            if (i % 3 == 0) {
+                result += i;
+                counter++;
+            }
+        }
+
+        double average = result / counter;
+        System.out.println(average);
     }
 }
