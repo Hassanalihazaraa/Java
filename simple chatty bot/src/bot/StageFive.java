@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class StageFive {
     public static void main(String[] args) {
         //collatzConjecture();
-        smallestValue();
+        //smallestValue();
+        squaresOfNaturalNumbers();
 
     }
 
@@ -39,5 +40,18 @@ public class StageFive {
             n++;
         }
         System.out.println(n);
+    }
+
+    public static void squaresOfNaturalNumbers() {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int square = 1;
+        int number = 1;
+
+        while (square <= n) {
+            System.out.println(square);
+            number++;
+            square = number * number;
+        }
     }
 }
