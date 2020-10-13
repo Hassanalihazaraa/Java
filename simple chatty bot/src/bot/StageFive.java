@@ -7,8 +7,8 @@ public class StageFive {
         //collatzConjecture();
         //smallestValue();
         //squaresOfNaturalNumbers();
-        Profit();
-
+        //Profit();
+        evenOrOdd();
     }
 
     public static void collatzConjecture() {
@@ -69,5 +69,20 @@ public class StageFive {
             m += m * p;
         }
         System.out.println(year);
+    }
+
+    public static void evenOrOdd() {
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNextInt()) {
+            int number = scanner.nextInt();
+            if (number == 0) {
+                break;
+            }
+            if (number % 2 == 0) {
+                System.out.println("even");
+            } else {
+                System.out.println("odd");
+            }
+        }
     }
 }
