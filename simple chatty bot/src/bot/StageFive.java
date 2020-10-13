@@ -11,7 +11,8 @@ public class StageFive {
         //Profit();
         //evenOrOdd();
         //busTour();
-        unOrderedSequence();
+        //unOrderedSequence();
+        sign(-1);
     }
 
     public static void collatzConjecture() {
@@ -113,7 +114,7 @@ public class StageFive {
             int number = scanner.nextInt();
             if (number == 0) {
                 break;
-            } else  if (number > previous) {
+            } else if (number > previous) {
                 decreasing = false;
             } else if (number < previous) {
                 increasing = false;
@@ -121,5 +122,16 @@ public class StageFive {
             previous = number;
         }
         System.out.println(increasing || decreasing);
+    }
+
+    public static int sign(int number) {
+        if (number <= -1) {
+            System.out.println(-1);
+        } else if (number == 0) {
+            System.out.println(0);
+        } else {
+            System.out.println(1);
+        }
+        return number;
     }
 }
