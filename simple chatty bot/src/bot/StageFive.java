@@ -8,7 +8,8 @@ public class StageFive {
         //smallestValue();
         //squaresOfNaturalNumbers();
         //Profit();
-        evenOrOdd();
+        //evenOrOdd();
+        busTour();
     }
 
     public static void collatzConjecture() {
@@ -82,6 +83,21 @@ public class StageFive {
                 System.out.println("even");
             } else {
                 System.out.println("odd");
+            }
+        }
+    }
+
+    public static void busTour() {
+        Scanner scanner = new Scanner(System.in);
+        int busHeight = scanner.nextInt();
+        int numberOfBridge = scanner.nextInt();
+        for (int i = 1; i < numberOfBridge; i++) {
+            int bridgeHeight = scanner.nextInt();
+            if (busHeight <= bridgeHeight) {
+                System.out.println("Will crash on bridge " + i);
+                break;
+            } else if (i == bridgeHeight) {
+                System.out.println("Will not crash");
             }
         }
     }
