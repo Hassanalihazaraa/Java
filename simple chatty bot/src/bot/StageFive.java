@@ -6,7 +6,8 @@ public class StageFive {
     public static void main(String[] args) {
         //collatzConjecture();
         //smallestValue();
-        squaresOfNaturalNumbers();
+        //squaresOfNaturalNumbers();
+        Profit();
 
     }
 
@@ -53,5 +54,20 @@ public class StageFive {
             number++;
             square = number * number;
         }
+    }
+
+    public static void Profit() {
+        Scanner scanner = new Scanner(System.in);
+        double m = scanner.nextDouble();
+        double p = scanner.nextDouble() / 100;
+        double k = scanner.nextDouble();
+
+        int year = 0;
+
+        while (m < k) {
+            year++;
+            m += m * p;
+        }
+        System.out.println(year);
     }
 }
