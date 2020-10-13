@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class StageFive {
     public static void main(String[] args) {
-        collatzConjecture();
+        //collatzConjecture();
+        smallestValue();
+
     }
 
     public static void collatzConjecture() {
@@ -24,5 +26,18 @@ public class StageFive {
                 System.out.print(number + " ");
             }
         }
+    }
+
+    public static void smallestValue() {
+        Scanner scanner = new Scanner(System.in);
+        long m = scanner.nextLong();
+        long n = 1L;
+        long result = 1L;
+
+        while (result <= m) {
+            result = result * (n + 1);
+            n++;
+        }
+        System.out.println(n);
     }
 }
