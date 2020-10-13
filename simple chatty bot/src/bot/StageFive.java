@@ -12,7 +12,8 @@ public class StageFive {
         //busTour();
         //unOrderedSequence();
         //sign(-1);
-        isVowel('a');
+        //isVowel('a');
+        factorial(0);
     }
 
     public static void collatzConjecture() {
@@ -145,5 +146,14 @@ public class StageFive {
         }
         System.out.print(false);
         return false;
+    }
+
+    public static long factorial(long n) {
+        long result = 1;
+        for (long i = 1; i <= n; i++) {
+            result *= i;
+            System.out.println(result);
+        }
+        return result;
     }
 }
