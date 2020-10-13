@@ -1,5 +1,6 @@
 package bot;
 
+import java.security.UnrecoverableEntryException;
 import java.util.Scanner;
 
 public class StageFive {
@@ -9,7 +10,8 @@ public class StageFive {
         //squaresOfNaturalNumbers();
         //Profit();
         //evenOrOdd();
-        busTour();
+        //busTour();
+        unOrderedSequence();
     }
 
     public static void collatzConjecture() {
@@ -100,5 +102,24 @@ public class StageFive {
                 System.out.println("Will not crash");
             }
         }
+    }
+
+    public static void unOrderedSequence() {
+        Scanner scanner = new Scanner(System.in);
+        int previous = scanner.nextInt();
+        boolean increasing = true;
+        boolean decreasing = true;
+        while (true) {
+            int number = scanner.nextInt();
+            if (number == 0) {
+                break;
+            } else  if (number > previous) {
+                decreasing = false;
+            } else if (number < previous) {
+                increasing = false;
+            }
+            previous = number;
+        }
+        System.out.println(increasing || decreasing);
     }
 }
