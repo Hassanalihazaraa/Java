@@ -14,7 +14,8 @@ public class StageFour {
         //sumOfIntegers();
         //sizeOfParts();
         //divisibleByNumber();
-        divisibleByFour();
+        //divisibleByFour();
+        countOfNumbers();
     }
 
     public static void checkSum() {
@@ -144,5 +145,21 @@ public class StageFour {
             }
         }
         System.out.println(result);
+    }
+
+    public static void countOfNumbers() {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int n = scanner.nextInt();
+        int count = 0;
+
+        while (a <= b) {
+            if (a % n == 0) {
+                count++;
+            }
+            a++;
+        }
+        System.out.println(count);
     }
 }
