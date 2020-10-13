@@ -4,20 +4,20 @@ import java.util.*;
 
 public class StageFour {
     public static void main(String[] args) {
-        //checkSum();
-        //notEqual();
-        //sort();
-        //conditionalStatement();
-        //conditionalStatementTwo();
-        //leapYear();
-        //chocolate();
-        //sumOfIntegers();
-        //sizeOfParts();
-        //divisibleByNumber();
-        //divisibleByFour();
-        //countOfNumbers();
-        //cubicEquation();
-        //arithmeticAverage();
+        checkSum();
+        notEqual();
+        sort();
+        conditionalStatement();
+        conditionalStatementTwo();
+        leapYear();
+        chocolate();
+        sumOfIntegers();
+        sizeOfParts();
+        divisibleByNumber();
+        divisibleByFour();
+        countOfNumbers();
+        cubicEquation();
+        arithmeticAverage();
         letCount();
     }
 
