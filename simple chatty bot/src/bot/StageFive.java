@@ -1,6 +1,5 @@
 package bot;
 
-import java.security.UnrecoverableEntryException;
 import java.util.Scanner;
 
 public class StageFive {
@@ -12,7 +11,8 @@ public class StageFive {
         //evenOrOdd();
         //busTour();
         //unOrderedSequence();
-        sign(-1);
+        //sign(-1);
+        isVowel('a');
     }
 
     public static void collatzConjecture() {
@@ -133,5 +133,17 @@ public class StageFive {
             System.out.println(1);
         }
         return number;
+    }
+
+    public static boolean isVowel(char vowel) {
+        char[] vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        for (char charactor : vowels) {
+            if (charactor == vowel) {
+                System.out.print(true);
+                return true;
+            }
+        }
+        System.out.print(false);
+        return false;
     }
 }
