@@ -13,7 +13,8 @@ public class StageFive {
         //unOrderedSequence();
         //sign(-1);
         //isVowel('a');
-        factorial(0);
+        //factorial(0);
+        studentAndTeacher();
     }
 
     public static void collatzConjecture() {
@@ -155,5 +156,20 @@ public class StageFive {
             System.out.println(result);
         }
         return result;
+    }
+
+    public static void studentAndTeacher() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Why do we use methods?\n" +
+                "1. To repeat a statement multiple times.\n" +
+                "2. To decompose a program into several small subroutines.\n" +
+                "3. To determine the execution time of a program.\n" +
+                "4. To interrupt the execution of a program.\n");
+        int answer = scanner.nextInt();
+        while (answer != 2) {
+            System.out.println("Please, try again.");
+            answer = scanner.nextInt();
+        }
     }
 }
