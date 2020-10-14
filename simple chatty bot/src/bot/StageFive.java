@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class StageFive {
     public static void main(String[] args) {
-        //collatzConjecture();
-        //smallestValue();
-        //squaresOfNaturalNumbers();
-        //Profit();
-        //evenOrOdd();
-        //busTour();
-        //unOrderedSequence();
-        //sign(-1);
-        //isVowel('a');
-        //factorial(0);
+        collatzConjecture();
+        smallestValue();
+        squaresOfNaturalNumbers();
+        Profit();
+        evenOrOdd();
+        busTour();
+        unOrderedSequence();
+        sign(-1);
+        isVowel('a');
+        factorial(0);
         studentAndTeacher();
     }
 
